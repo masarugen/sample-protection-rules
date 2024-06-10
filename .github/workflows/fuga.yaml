@@ -3,7 +3,7 @@ name: Fuga Random Success or Failure
 on: [push, workflow_dispatch]
 
 jobs:
-  random-result:
+  random-result-fuga:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

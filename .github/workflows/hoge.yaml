@@ -3,7 +3,7 @@ name: Hoge Random Success or Failure
 on: [push, workflow_dispatch]
 
 jobs:
-  random-result:
+  random-result-hoge:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
