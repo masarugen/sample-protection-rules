@@ -21,3 +21,22 @@ jobs:
             echo "The job will fail."
             exit 1
           fi
+
+  random-result-hoge2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run random script
+        run: |
+          echo "Generating a random number between 0 and 1..."
+          RANDOM_NUMBER=$((RANDOM % 2))
+          echo "Random number: $RANDOM_NUMBER"
+          if [ $RANDOM_NUMBER -eq 0 ]; then
+            echo "The job will succeed."
+            exit 0
+          else
+            echo "The job will fail."
+            exit 1
+          fi
