@@ -1,3 +1,3 @@
 # sample-protection-rules
 
-1
+3
